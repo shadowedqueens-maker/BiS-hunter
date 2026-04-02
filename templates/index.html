@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiSHunter - TBC Classic Gear Advisor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="logo">⚔️ BiS<span class="accent">Hunter</span></h1>
+            <p class="tagline">TBC Classic Gear Advisor</p>
+        </div>
+    </header>
+
+    <!-- Input Section -->
+    <section class="input-section">
+        <div class="container">
+            <div class="input-card">
+                <h2>Paste Your AskMrRobot Export</h2>
+                <div class="input-row">
+                    <textarea id="amr-input" placeholder="$50;US;ServerName;CharName;...;$" rows="3"></textarea>
+                </div>
+                <div class="input-controls">
+                    <div class="spec-selectors">
+                        <div class="select-group">
+                            <label for="main-spec">Main Spec</label>
+                            <select id="main-spec">
+                                <option value="prot">Protection</option>
+                                <option value="ret">Retribution</option>
+                                <option value="holy">Holy</option>
+                            </select>
+                        </div>
+                        <div class="select-group">
+                            <label for="off-spec">Off Spec</label>
+                            <select id="off-spec">
+                                <option value="ret">Retribution</option>
+                                <option value="prot">Protection</option>
+                                <option value="holy">Holy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="analyze-btn" class="btn-analyze">Analyze Gear</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="spinner"></div>
+        <p>Analyzing your gear...</p>
+    </div>
+
+    <!-- Results Section -->
+    <section id="results-section" class="results-section hidden">
+        <div class="container">
+            <!-- Character Banner -->
+            <div id="char-banner" class="char-banner"></div>
+
+            <!-- Tab Navigation -->
+            <nav class="tab-nav">
+                <button class="tab-btn active" data-tab="character">Character</button>
+                <button class="tab-btn" data-tab="inventory">Inventory</button>
+                <button class="tab-btn" data-tab="upgrades">Upgrades</button>
+            </nav>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Character Tab -->
+                <div id="tab-character" class="tab-pane active">
+                    <div class="paper-doll" id="paper-doll"></div>
+                </div>
+
+                <!-- Inventory Tab -->
+                <div id="tab-inventory" class="tab-pane hidden">
+                    <div id="inventory-content"></div>
+                </div>
+
+                <!-- Upgrades Tab -->
+                <div id="tab-upgrades" class="tab-pane hidden">
+                    <div class="upgrades-controls">
+                        <div class="spec-toggle" id="upgrade-spec-toggle"></div>
+                        <div class="phase-tabs" id="phase-tabs"></div>
+                    </div>
+                    <div id="upgrades-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wowhead TBC tooltip embed -->
+    <script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+    <script src="https://nether.wowhead.com/widgets/power.js"></script>
+
+    <script src="/static/js/renderer.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
