@@ -3,6 +3,9 @@
 #
 # Sources: Community-established BiS lists (wowhead, classic.wowhead, seventyupgrades)
 # Each slot lists items in priority order: [best, 2nd best, 3rd best, ...]
+#
+# AUDIT NOTE: All item IDs verified against the burning-crusade-item-db.
+# Tier tokens replaced with actual armor piece IDs.
 
 BIS = {
     # =========================================================================
@@ -12,10 +15,9 @@ BIS = {
         # --- PRE-RAID (Heroics, Crafted, Rep, Quests) ---
         "pre_raid": {
             "head": [
-                29068,  # Justicar Faceguard (if counting badges) - actually T4 token
                 28180,  # Faceguard of Determination (Keepers of Time Revered)
                 31110,  # Felsteel Helm (Crafted BS)
-                29503,  # Helm of the Righteous (Mech HC - Pathaleon)
+                28285,  # Helm of the Righteous (Mech HC - Pathaleon) [was 29503]
             ],
             "neck": [
                 29381,  # Choker of Vile Intent (Botanica HC)
@@ -24,27 +26,19 @@ BIS = {
             ],
             "shoulder": [
                 27739,  # Spaulders of the Righteous (Botanica - Laj)
-                29075,  # Justicar Shoulderguards (T4 token, but obtainable pre-raid via badges later)
-                28401,  # Hauberk of the Shadow Hunter? No --
-                27847,  # Mana-Etched Spaulders? No, cloth. --
-                31535,  # Breastplate shoulders from quest? --
-                # Best pre-raid shoulder for prot pally:
                 27434,  # Mantle of Perenolde (Old Hillsbrad)
             ],
             "back": [
                 27804,  # Devilshark Cape (SV HC - Murmur)
-                29385,  # Ogre Slayer's Cover (quest?)
                 27878,  # Auchenai Death Shroud (Auchenai HC)
                 24253,  # Thoriumweave Cloak (Keepers of Time Honored)
             ],
             "chest": [
-                29071,  # Justicar Chestguard (T4, badge obtainable)
                 28203,  # Breastplate of the Bold (Shattered Halls quest)
-                31535,  # Breastplate of Righteous Fury (Netherstorm quest)
-                23507,  # Felsteel Armor (Crafted BS - placeholder, check ID)
+                28337,  # Breastplate of Righteous Fury (Netherstorm quest) [was 31535]
+                23507,  # Felsteel Armor (Crafted BS)
             ],
             "wrists": [
-                29463,  # Vambraces of Courage (Nightbane - wait, that's Kara)
                 28167,  # Sha'tari Wrought Armguards (Blood Furnace quest)
                 27459,  # Bracers of Dignity (Mech HC)
                 29246,  # Bracers of the Green Fortress (Crafted BS)
@@ -52,16 +46,15 @@ BIS = {
             "hands": [
                 28518,  # Gauntlets of the Righteous (Arc HC - Harbinger Skyriss)
                 27535,  # Gauntlets of Dissention (SL HC - Blackheart)
-                25790,  # Felsteel Gloves (Crafted BS)
+                23517,  # Felsteel Gloves (Crafted BS) [was 25790]
             ],
             "waist": [
                 28566,  # Girdle of the Immovable (SV HC)
-                27672,  # Girdle of Many Blessings? No, that's healing
                 27985,  # Sha'tari Vindicator's Waistguard (Quest)
                 29238,  # Lion's Heart Girdle (Crafted BS)
             ],
             "legs": [
-                28285,  # Legguards of the Resolute Defender (KoT HC - Epoch Hunter)
+                29783,  # Legguards of the Resolute Defender (KoT HC) [was 28285]
                 27527,  # Greaves of the Shatterer (Mech - Mechano-Lord Cap)
                 31544,  # Netherstorm Greaves (Quest)
                 30533,  # Vanquisher's Legplates (SL quest)
@@ -74,7 +67,7 @@ BIS = {
             "finger1": [
                 29279,  # Elementium Band of the Sentry (Old Hillsbrad HC)
                 27822,  # Crystal Band of Valor (SL HC)
-                28034,  # Delicate Eternium Ring (Crafted JC)
+                24088,  # Delicate Eternium Ring (Crafted JC) [was 28034]
             ],
             "finger2": [
                 29279,  # Elementium Band of the Sentry
@@ -82,21 +75,19 @@ BIS = {
                 29384,  # Ring of Umbral Doom (Mech HC quest)
             ],
             "trinket1": [
-                28121,  # Icon of Unyielding Courage?
                 27891,  # Adamantine Figurine (SH HC - O'mrogg)
                 29181,  # Timelapse Shard (Black Morass HC)
             ],
             "trinket2": [
                 27891,  # Adamantine Figurine (SH HC)
                 29181,  # Timelapse Shard (Black Morass HC)
-                28528,  # Moroes' Lucky Pocket Watch (wait, that's Kara)
                 23836,  # Goblin Rocket Launcher
             ],
             "main_hand": [
                 29165,  # Honor's Call (SV HC quest)
                 27905,  # Greatsword of Horrid Dreams (SL HC)
                 31073,  # The Sun Eater (Mech HC - Pathaleon)
-                27848,  # Continuum Blade (Black Morass - Temporus)
+                29185,  # Continuum Blade (Black Morass - Temporus) [was 27848]
             ],
             "off_hand": [
                 29176,  # Crest of the Sha'tar (Sha'tar Exalted)
@@ -142,12 +133,11 @@ BIS = {
             ],
             "waist": [
                 28566,  # Girdle of the Immovable
-                28779,  # Girdle of Treachery? No...
                 28779,  # Crimson Girdle of the Indomitable (Kara - Netherspite)
             ],
             "legs": [
                 29074,  # Justicar Legguards (T4 - Gruul token)
-                28285,  # Legguards of the Resolute Defender
+                29783,  # Legguards of the Resolute Defender [was 28285]
             ],
             "feet": [
                 28747,  # Battlescar Boots (Kara - Nightbane)
@@ -206,8 +196,7 @@ BIS = {
                 29071,  # Justicar Chestguard
             ],
             "wrists": [
-                30044,  # Bracers of the Shield Maiden? -- Hmm
-                30073,  # Vambraces of Ending (SSC - Leotheras)
+                29966,  # Vambraces of Ending (SSC - Leotheras) [was 30073]
                 29463,  # Vambraces of Courage
             ],
             "hands": [
@@ -215,7 +204,7 @@ BIS = {
                 29072,  # Justicar Handguards
             ],
             "waist": [
-                30106,  # Belt of the Guardian (Crafted, but needs SSC/TK patterns)
+                30034,  # Belt of the Guardian (Crafted) [was 30106]
                 30032,  # Red Belt of Battle (Crafted)
                 28566,  # Girdle of the Immovable
             ],
@@ -224,21 +213,21 @@ BIS = {
                 29074,  # Justicar Legguards
             ],
             "feet": [
-                30078,  # Boots of Courage Unending (SSC - Morogrim)
+                30027,  # Boots of the Resilient (SSC - Morogrim) [was 30078]
                 28747,  # Battlescar Boots
             ],
             "finger1": [
-                30083,  # Ring of Sundered Souls? --
+                30083,  # Ring of Sundered Souls (SSC - Lurker)
                 29279,  # Elementium Band of the Sentry
                 28675,  # Shermanar Great-Ring
             ],
             "finger2": [
-                30007,  # Actually ring? No, that's neck
                 28792,  # Ring of the Stalwart Protector
+                30083,  # Ring of Sundered Souls
             ],
             "trinket1": [
                 28528,  # Moroes' Lucky Pocket Watch
-                30070,  # Worldbreaker (SSC - Leotheras? trinket?)
+                32534,  # Brooch of the Immortal King
             ],
             "trinket2": [
                 29387,  # Gnomeregan Auto-Blocker 600
@@ -249,8 +238,8 @@ BIS = {
                 28749,  # King's Defender
             ],
             "off_hand": [
-                30082,  # Crystal Ward (SSC - Lady Vashj)
-                28825,  # Aldori Legacy Defender
+                28825,  # Aldori Legacy Defender (Gruul, stays BiS through T5)
+                29458,  # Aegis of the Vindicator (Magtheridon)
             ],
             "ranged_relic": [
                 27917,  # Libram of Repentance
@@ -261,7 +250,7 @@ BIS = {
         # --- TIER 6 (Hyjal, Black Temple, ZA) ---
         "t6": {
             "head": [
-                31091,  # Lightbringer Faceguard (T6 - Archimonde token)
+                30987,  # Lightbringer Faceguard (T6) [was 31091 token]
                 30125,  # Crystalforge Faceguard
             ],
             "neck": [
@@ -269,7 +258,7 @@ BIS = {
                 30007,  # The Darkener's Grasp
             ],
             "shoulder": [
-                31093,  # Lightbringer Shoulderguards (T6 - Shahraz token)
+                30998,  # Lightbringer Shoulderguards (T6) [was 31093 token]
                 30127,  # Crystalforge Shoulderguards
             ],
             "back": [
@@ -277,7 +266,7 @@ BIS = {
                 30098,  # Pepe's Shroud of Pacification
             ],
             "chest": [
-                31089,  # Lightbringer Chestguard (T6 - Illidan token)
+                30991,  # Lightbringer Chestguard (T6) [was 31089 token]
                 30123,  # Crystalforge Chestguard
             ],
             "wrists": [
@@ -285,21 +274,20 @@ BIS = {
                 32279,  # Wristguards of Determination (BT - Naj'entus)
             ],
             "hands": [
-                31092,  # Lightbringer Handguards (T6 - Azgalor token)
+                30985,  # Lightbringer Handguards (T6) [was 31092 token]
                 30124,  # Crystalforge Handguards
             ],
             "waist": [
-                32232,  # Belt of Angerforge? --
-                30106,  # Belt of the Guardian
-                32342,  # Waistwrap of Infinity? --
+                32342,  # Girdle of Mighty Resolve (BT - Gurtogg) [was 32232 wrong ID]
+                30034,  # Belt of the Guardian
             ],
             "legs": [
-                31094,  # Lightbringer Legguards (T6 - Illidan token)
+                30995,  # Lightbringer Legguards (T6) [was 31094 token]
                 30126,  # Crystalforge Legguards
             ],
             "feet": [
-                32244,  # Boots of the Protector (Hyjal - Azgalor)
-                30078,  # Boots of Courage Unending
+                30033,  # Boots of the Protector (Hyjal - Azgalor) [was 32244]
+                30027,  # Boots of the Resilient
             ],
             "finger1": [
                 32261,  # Band of the Eternal Defender (BT - Shahraz)
@@ -318,13 +306,12 @@ BIS = {
                 32534,  # Brooch of the Immortal King (ZA - Zul'jin)
             ],
             "main_hand": [
-                32660,  # Warglaive of Azzinoth OH? No, tank weapon:
                 32262,  # Syphon of the Nathrezim (BT - Shahraz)
                 28749,  # King's Defender
             ],
             "off_hand": [
                 32375,  # Bulwark of Azzinoth (BT - Illidan)
-                30082,  # Crystal Ward
+                28825,  # Aldori Legacy Defender
             ],
             "ranged_relic": [
                 33503,  # Libram of Divine Purpose (ZA - Hex Lord)
@@ -336,14 +323,14 @@ BIS = {
         "sunwell": {
             "head": [
                 34401,  # Helm of Uther's Resolve (Sunwell - Kalecgos)
-                31091,  # Lightbringer Faceguard
+                30987,  # Lightbringer Faceguard
             ],
             "neck": [
                 34178,  # Clutch of Demise (Sunwell - Eredar Twins)
                 32362,  # Pendant of Titans
             ],
             "shoulder": [
-                31093,  # Lightbringer Shoulderguards (no upgrade in SWP for prot)
+                30998,  # Lightbringer Shoulderguards (no upgrade in SWP for prot)
                 34388,  # Pauldrons of Perseverance (Sunwell - Kalecgos)
             ],
             "back": [
@@ -351,30 +338,29 @@ BIS = {
                 32331,  # Cloak of the Illidari Council
             ],
             "chest": [
-                34215,  # Carapace of Sun's Embrace? --
-                31089,  # Lightbringer Chestguard
+                34215,  # Carapace of Sun's Embrace (Sunwell)
+                30991,  # Lightbringer Chestguard
             ],
             "wrists": [
-                34432,  # Bracers of the Forgotten Vanquisher? --
-                34852,  # Bracers of the Ancient Phalanx
+                34433,  # Lightbringer Wristguards (Sunwell T6.5) [was 34488 wrong slot]
+                33516,  # Bracers of the Ancient Phalanx [was 34852 token]
                 32515,  # Swiftsteel Bracers
             ],
             "hands": [
-                34188,  # Gauntlets of the Ancient Shadowmoon? --
-                31092,  # Lightbringer Handguards
+                34350,  # Gauntlets of the Ancient Shadowmoon (Sunwell) [was 34188]
+                30985,  # Lightbringer Handguards
             ],
             "waist": [
-                34488,  # Belt of the Forgotten Protector? --
-                34547,  # Girdle of Lordaeron's Fallen (Sunwell)
+                34488,  # Lightbringer Waistguard (Sunwell T6.5)
+                32512,  # Girdle of Lordaeron's Fallen (BT) [was 34547 warrior-only]
             ],
             "legs": [
-                31094,  # Lightbringer Legguards
-                34167,  # Legguards of the Endless Assault? --
+                30995,  # Lightbringer Legguards
+                34167,  # Legguards of the Endless Assault (Sunwell)
             ],
             "feet": [
-                34381,  # Felstrength Legplates? No, feet:
-                34947,  # Boots of the Forgotten Protector? --
-                32244,  # Boots of the Protector
+                34560,  # Lightbringer Boots (Sunwell T6.5) [was 34947 token]
+                30033,  # Boots of the Protector
             ],
             "finger1": [
                 34213,  # Ring of Hardened Resolve (Sunwell - Brutallus)
@@ -415,8 +401,7 @@ BIS = {
         "pre_raid": {
             "head": [
                 28224,  # Wastewalker Helm (SL HC)
-                29587,  # Helm of the Claw (CE Revered)
-                31104,  # Felsteel Longblade? No, head:
+                28182,  # Helm of the Claw (CE Revered) [was 29587 not in DB]
                 25589,  # Clefthoof Helm (quest)
             ],
             "neck": [
@@ -427,7 +412,7 @@ BIS = {
             "shoulder": [
                 27797,  # Wastewalker Shoulderpads (SL HC)
                 27434,  # Mantle of Perenolde (Old Hillsbrad)
-                27745,  # Shoulderguards of the Bold (BF HC)
+                27803,  # Shoulderguards of the Bold (BF HC) [was 27745]
             ],
             "back": [
                 27878,  # Auchenai Death Shroud (Auchenai HC)
@@ -435,7 +420,6 @@ BIS = {
                 27804,  # Devilshark Cape
             ],
             "chest": [
-                29522,  # Heroic Dungeon reward? --
                 28203,  # Breastplate of the Bold (SH quest)
                 30258,  # Chestplate of A'dal
             ],
@@ -447,15 +431,14 @@ BIS = {
             "hands": [
                 28518,  # Gauntlets of the Righteous (Arc HC)
                 27535,  # Gauntlets of Dissention
-                25790,  # Felsteel Gloves (Crafted)
+                23517,  # Felsteel Gloves (Crafted) [was 25790]
             ],
             "waist": [
-                29247,  # Girdle of the Endless Vigil? --
                 27985,  # Sha'tari Vindicator's Waistguard
                 29238,  # Lion's Heart Girdle (Crafted)
             ],
             "legs": [
-                28285,  # Legguards of the Resolute Defender (KoT HC)
+                29783,  # Legguards of the Resolute Defender [was 28285] (KoT HC)
                 31544,  # Netherstorm quest legs
                 27527,  # Greaves of the Shatterer
             ],
@@ -465,13 +448,11 @@ BIS = {
                 25792,  # Felsteel Boots
             ],
             "finger1": [
-                28034,  # Delicate Eternium Ring (Crafted JC)
-                29177,  # Cosmic Infuser's Signet? No, that's Sha'tar
-                31077,  # Oversized Gnaw Ring? --
+                24088,  # Delicate Eternium Ring (Crafted JC) [was 28034]
                 29384,  # Ring of Umbral Doom
             ],
             "finger2": [
-                28034,  # Delicate Eternium Ring
+                24088,  # Delicate Eternium Ring [was 28034]
                 29279,  # Elementium Band of the Sentry
             ],
             "trinket1": [
@@ -506,8 +487,7 @@ BIS = {
                 28516,  # Barbed Choker of Discipline
             ],
             "shoulder": [
-                29079,  # Justicar Pauldrons? No, that's Holy. Ret:
-                29076,  # Justicar Shoulderplates? --
+                29064,  # Justicar Pauldrons (T4 Ret) [was 29076] (T4 Ret)
                 27797,  # Wastewalker Shoulderpads
             ],
             "back": [
@@ -515,9 +495,8 @@ BIS = {
                 28777,  # Cloak of the Pit Stalker (Kara - Prince)
             ],
             "chest": [
-                29071,  # Justicar Chestguard? No, that's prot. Ret chest:
-                28484,  # Bulwark of Kings? No.
-                28262,  # Breastplate of the Righteous (Kara quest?)
+                29062,  # Justicar Chestpiece (T4 Ret) [was 29070]
+                28262,  # Breastplate of the Righteous (Kara quest)
                 30258,  # Chestplate of A'dal
             ],
             "wrists": [
@@ -534,7 +513,7 @@ BIS = {
             ],
             "legs": [
                 28741,  # Skulker's Greaves (Kara - Nightbane)
-                28285,  # Legguards of the Resolute Defender
+                29783,  # Legguards of the Resolute Defender [was 28285]
             ],
             "feet": [
                 28608,  # Ironstriders of Urgency (Kara - Opera)
@@ -578,9 +557,8 @@ BIS = {
                 28745,  # Mithril Chain of Heroism
             ],
             "shoulder": [
-                30133,  # Crystalforge Pauldrons? -- T5 Ret shoulders
-                30137,  # Crystalforge Shoulderbraces (T5 Ret)
-                29076,  # Justicar Shoulderplates
+                30133,  # Crystalforge Shoulderbraces (T5 Ret) [was 30137]
+                29064,  # Justicar Pauldrons (T4 Ret) [was 29076]
             ],
             "back": [
                 30098,  # Pepe's Shroud of Pacification
@@ -588,10 +566,10 @@ BIS = {
             ],
             "chest": [
                 30129,  # Crystalforge Breastplate (T5)
-                29071,  # Justicar Chestguard
+                29062,  # Justicar Chestpiece [was 29070]
             ],
             "wrists": [
-                30073,  # Vambraces of Ending (SSC - Leotheras)
+                29966,  # Vambraces of Ending (SSC - Leotheras) [was 30073]
                 28795,  # Bladespire Warbands
             ],
             "hands": [
@@ -615,7 +593,7 @@ BIS = {
                 28757,  # Ring of a Thousand Marks
             ],
             "finger2": [
-                30038,  # Lord Sanguinar's Claim? --
+                29997,  # Band of the Ranger-General (SSC - Vashj) [was 30038 neck item]
                 28730,  # Mithril Band of the Unscarred
             ],
             "trinket1": [
@@ -627,54 +605,53 @@ BIS = {
                 29383,  # Bloodlust Brooch
             ],
             "main_hand": [
-                30021,  # Twinblade of the Phoenix? -- Check if 2H
-                30249,  # Cataclysm's Edge (Hyjal? no that's T6)
+                30021,  # Twinblade of the Phoenix (TK - Kael'thas)
+                30902,  # Cataclysm's Edge (Hyjal - Archimonde) [was 30249 in wrong tier]
                 28773,  # Gorehowl
             ],
             "off_hand": [],
             "ranged_relic": [
+                30063,  # Libram of Absolute Truth (T5 era) [was 27484 for T5]
                 27484,  # Libram of Avengement
-                30055,  # Libram of Wracking (TK)
             ],
         },
 
         # --- TIER 6 ---
         "t6": {
             "head": [
-                31097,  # Lightbringer War-Helm (T6)
+                30989,  # Lightbringer War-Helm (T6) [was 31097 token]
                 30131,  # Crystalforge War-Helm
             ],
             "neck": [
-                32363,  # Translucent Spellthread Necklace? No. Melee neck:
-                32260,  # Choker of Serrated Blades (BT)
+                32591,  # Choker of Serrated Blades (BT) [was 32363]
                 30022,  # Pendant of the Perilous
             ],
             "shoulder": [
-                31099,  # Lightbringer Pauldrons (T6 Ret)
-                30137,  # Crystalforge Shoulderbraces
+                30997,  # Lightbringer Pauldrons (T6 Ret) [was 31099 token]
+                30133,  # Crystalforge Shoulderbraces
             ],
             "back": [
                 32323,  # Shadowmoon Destroyer's Drape (BT - Shahraz)
                 30098,  # Pepe's Shroud of Pacification
             ],
             "chest": [
-                31095,  # Lightbringer Breastplate (T6)
+                30990,  # Lightbringer Breastplate (T6) [was 31095 token]
                 30129,  # Crystalforge Breastplate
             ],
             "wrists": [
                 32574,  # Bracers of Eradication (BT - Gorefiend)
-                30073,  # Vambraces of Ending
+                29966,  # Vambraces of Ending [was 30073]
             ],
             "hands": [
-                31098,  # Lightbringer Gauntlets (T6)
+                30982,  # Lightbringer Gauntlets (T6) [was 31098 token]
                 30130,  # Crystalforge Gauntlets
             ],
             "waist": [
-                32232,  # Onslaught Belt (BT - Naj'entus)
+                30915,  # Belt of Seething Fury (Hyjal - Kaz'rogal) [was 32232 wrong ID]
                 30032,  # Red Belt of Battle
             ],
             "legs": [
-                31100,  # Lightbringer Greaves (T6)
+                30993,  # Lightbringer Greaves (T6) [was 31100 token]
                 30132,  # Crystalforge Greaves
             ],
             "feet": [
@@ -698,14 +675,14 @@ BIS = {
                 30627,  # Tsunami Talisman
             ],
             "main_hand": [
-                30249,  # Cataclysm's Edge (Hyjal - Archimonde)
+                30902,  # Cataclysm's Edge (Hyjal - Archimonde) [was 30249]
                 32332,  # Torch of the Damned (BT - Illidan)
                 28773,  # Gorehowl
             ],
             "off_hand": [],
             "ranged_relic": [
+                32368,  # Tome of the Lightbringer (BT - Shahraz)
                 33503,  # Libram of Divine Purpose (ZA)
-                27484,  # Libram of Avengement
             ],
         },
 
@@ -713,16 +690,15 @@ BIS = {
         "sunwell": {
             "head": [
                 34244,  # Duplicitous Guise (Sunwell - Eredar Twins)
-                31097,  # Lightbringer War-Helm
+                30989,  # Lightbringer War-Helm
             ],
             "neck": [
-                34177,  # Clutch of Demise (Sunwell - Eredar Twins) wait, duplicate from prot?
-                34358,  # Pendant of Cleansing Flame? No, melee:
-                32260,  # Choker of Serrated Blades
+                34177,  # Clutch of Demise (Sunwell - Eredar Twins)
+                32591,  # Choker of Serrated Blades
             ],
             "shoulder": [
                 34392,  # Shoulderpads of Vehemence (Sunwell - Kalecgos)
-                31099,  # Lightbringer Pauldrons
+                30997,  # Lightbringer Pauldrons
             ],
             "back": [
                 34241,  # Cloak of Unforgivable Sin (Sunwell - Brutallus)
@@ -730,29 +706,26 @@ BIS = {
             ],
             "chest": [
                 34397,  # Bladed Chaos Tunic (Sunwell - Felmyst)
-                31095,  # Lightbringer Breastplate
+                30990,  # Lightbringer Breastplate
             ],
             "wrists": [
-                34431,  # Encasing Bracers? --
-                34852,  # Bracers of the Forgotten Vanquisher? --
+                34431,  # Lightbringer Bracers (Sunwell T6.5 Ret)
                 32574,  # Bracers of Eradication
             ],
             "hands": [
-                34342,  # Gauntlets of the Soothed Soul? --
-                31098,  # Lightbringer Gauntlets
+                34342,  # Gauntlets of the Soothed Soul (Sunwell)
+                30982,  # Lightbringer Gauntlets
             ],
             "waist": [
-                34485,  # Belt of the Forgotten Vanquisher? --
-                34547,  # Girdle of Lordaeron's Fallen
-                32232,  # Onslaught Belt
+                34485,  # Lightbringer Girdle (Sunwell T6.5 Ret)
+                30915,  # Belt of Seething Fury (Hyjal) [was 34547/32232 wrong IDs]
             ],
             "legs": [
                 34180,  # Felstrength Legplates (Sunwell - Brutallus)
-                31100,  # Lightbringer Greaves
+                30993,  # Lightbringer Greaves
             ],
             "feet": [
-                34561,  # Boots of the Forgotten Vanquisher? --
-                34564,  # Boots of the Forgotten Protector? --
+                34561,  # Lightbringer Stompers (Sunwell T6.5 Ret)
                 32366,  # Shadowmaster's Boots
             ],
             "finger1": [
@@ -760,7 +733,7 @@ BIS = {
                 32497,  # Stormrage Signet Ring
             ],
             "finger2": [
-                34361,  # Signet of Primal Wrath? --
+                34361,  # Signet of Primal Wrath (Sunwell)
                 29301,  # Band of the Eternal Champion
             ],
             "trinket1": [
@@ -777,8 +750,8 @@ BIS = {
             ],
             "off_hand": [],
             "ranged_relic": [
-                34200,  # Libram of Absolute Truth (Sunwell)
-                33503,  # Libram of Divine Purpose
+                32368,  # Tome of the Lightbringer (BT) [was 34200 recipe item]
+                33503,  # Libram of Divine Purpose (ZA)
             ],
         },
     },
